@@ -1,0 +1,28 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-image: url("/home/fundo.png");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.707);
+    height: 40vh;
+    width: 30vw;
+    border: transparent 2px solid;
+    border-radius: 3px;
+}
