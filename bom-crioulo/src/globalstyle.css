@@ -1,15 +1,184 @@
 @import url('https://fonts.cdnfonts.com/css/breathing');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 .titulo{
     font-family: 'Breathing', sans-serif;
     font-style: normal;
     color: white;
+    font-size: 80px;
 }
 .botao{
     font-family: 'Maharlika', sans-serif;
-    font-weight: 300;
+    font-family: "Abel", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.botao:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  color: rgb(0, 121, 168);
 }
 .linha-pontilhada {
   border-top: 2px dotted rgb(255, 255, 255); 
+  width: 12vw;  
+  margin: 10px 0;
+}
+.resumo{
+  background-image: url("/resumo.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+.linha-pontilhada-resumo {
+  border-top: 2px dotted rgb(255, 255, 255); 
   width: 20vw;  
-  margin: 20px 0;
+  margin: 2px 0;
+}
+.titulo-resumo{
+  font-family: 'Breathing', sans-serif;
+  font-style: normal;
+  color: white;
+  font-size: 80px;
+  padding-top: 20px;
+}
+#livro-resumo{
+  width: 15vw;
+  height: 37vh;
+  object-fit: cover;
+  object-position: top;
+  position: absolute;
+  top: 58vh;
+  left: 80vw;
+  border-radius: 10px;
+  border: solid 1px rgba(0, 0, 22, 0.562);
+  overflow: hidden;
+} 
+#livro-resumo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;                 /* posição inicial */
+  transition: object-position 1s ease;  
+}
+#livro-resumo:hover img{
+  object-position: top;
+}
+.texto-resumo{
+  font-family: 'Maharlika', sans-serif;
+  font-family: "Abel", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.397);
+  height: auto;
+  width: 60vw;
+  padding-top: 15px;
+  padding: 30px;
+  margin-top: 10px;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+.personagens{
+  background-image: url("/personagens.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+.autor{
+  background-image: url("/autor.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+#autor-foto{
+  width: 20vw;
+  height: 50vh;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 20vh;
+  left: 77vw;
+  border-radius: 10px;
+  border: solid 1px rgba(0, 0, 22, 0.562);
+  overflow: hidden;
+}
+
+#autor-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;                 /* posição inicial */
+  transition: transform 1s ease;     /* transição suave de 1s */
+}
+#autor-foto:hover img {
+  transform: scale(1.1);       /* posição final ao passar o mouse */
+}
+
+#local-renascenca {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,22,0.562);
+  position: absolute;
+  top: 60vh;
+  left: 70vw;
+}
+
+#local-renascenca img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;                 /* posição inicial */
+  transition: object-position 1s ease;     /* transição suave de 1s */
+}
+
+#local-renascenca:hover img {
+  object-position: right center;           /* posição final ao passar o mouse */
+}
+
+
+.texto-autor{
+  font-family: 'Maharlika', sans-serif;
+  font-family: "Abel", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.397);
+  height: auto;
+  width: 40vw;
+  padding-top: 15px;
+  padding: 30px;
+  margin-top: 10px;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+
+.equipe{
+  background-image: url("/equipe.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
 }

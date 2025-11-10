@@ -12,16 +12,16 @@ function Home() {
         <button className='botao' onClick={() => navigate('/Resumo')}>Resumo</button>
         <div className="linha-pontilhada"></div>
 
-        <button>Personagens</button>
+        <button className='botao' onClick={() => navigate('/Personagens')}>Personagens</button>
         <div className="linha-pontilhada"></div>
 
-        <button>Autor</button>
+        <button className='botao'  onClick={() => navigate('/Autor')}>Autor</button>
         <div className="linha-pontilhada"></div>
 
-        <button>Extras</button>
+        <button className='botao' >Extras</button>
         <div className="linha-pontilhada"></div>
 
-        <button>Equipe</button>
+        <button className='botao' onClick={()=> navigate('/Equipe')}>Equipe</button>
         <div className="linha-pontilhada"></div>
       </div>
     </div>
