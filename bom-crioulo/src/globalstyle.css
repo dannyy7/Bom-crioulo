@@ -266,3 +266,54 @@
   position: absolute;
   top: 50vh;
 }
+
+.lacrebot {
+  position: absolute;
+  top: 42vh;
+  left: 43vw;
+  border: none;
+  padding: 0;
+
+  background: none;
+  cursor: pointer;
+
+  display: inline-block; 
+  line-height: 0; /* impede espaço a mais */
+}
+
+/* IMAGEM – agora fica normal e dá o tamanho ao botão */
+.lacre {
+  width: 15vw;
+  height: auto;
+  display: block; /* remove espaço extra */
+  pointer-events: none;
+}
+/* animação de vibração */
+@keyframes animacao {
+  0%   { transform: translate(0); }
+  25%  { transform: translate(-3px, 2px); }
+  50%  { transform: translate(3px, -2px); }
+  75%  { transform: translate(-2px, 1px); }
+  100% { transform: translate(0); }
+}
+
+/* classe que aplica a animação */
+.animacao {
+  animation: animacao 0.2s ease-in-out 3; /* 3 vezes em 0.2s cada */
+}
+
+.carta {
+  cursor: pointer;
+}
+
+.lacrebot {
+  cursor: pointer;
+}
+
+.cartafundo{
+  background-image: url("/carta1.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
