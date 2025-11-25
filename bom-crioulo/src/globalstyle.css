@@ -78,15 +78,25 @@
   font-style: normal;
   font-size: 20px;
   color: white;
+  margin-bottom: 20px;
+  text-indent: 20px;
+}
+
+.box-texto-resumo{
+  display: flex;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.397);
   height: auto;
   width: 60vw;
   padding-top: 15px;
   padding: 30px;
+  padding-bottom: 10px;
   margin-top: 10px;
   border: 5px solid transparent;
   border-radius: 10px;
+  padding-top: 40px;
 }
+
 .personagens{
   background-image: url("/personagens.png");
   background-size: cover;
@@ -97,6 +107,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .autor{
   background-image: url("/autor.png");
   background-size: cover;
@@ -156,20 +167,36 @@
 
 
 .texto-autor{
-  font-family: 'Maharlika', sans-serif;
-  font-family: "Abel", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 20px;
-  color: white;
   background-color: rgba(0, 0, 0, 0.397);
-  height: auto;
+  height: 60vh;
   width: 40vw;
   padding-top: 15px;
   padding: 30px;
   margin-top: 10px;
   border: 5px solid transparent;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll; /* ainda precisa do scroll funcional */
+
+  /* Scrollbar invisível para Webkit (Chrome, Edge, Safari) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.texto{
+  font-family: 'Maharlika', sans-serif;
+  font-family: "Abel", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+  text-indent: 20px;
+  margin-top: 20px;
+}
+
+.texto-autor::-webkit-scrollbar {
+  display: none; /* Chrome, Safari e Edge */
 }
 
 .equipe{
@@ -181,4 +208,61 @@
   height: 100vh;
   flex-direction: column;
   align-items: center;
+}
+
+.paragrafo-titulo {
+  font-family: 'Breathing', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  /* Recua a primeira linha, mas mantém À ESQUERDA */
+  text-indent: 20px;
+}
+
+.paragrafos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Já alinha à ESQUERDA */
+  justify-content: flex-start;
+  width: 70vw;
+  height: 55vh;
+  margin-top: 50px;
+  padding: 40px;
+  border: 5px solid transparent;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.397);
+
+  overflow-y: scroll; /* ainda precisa do scroll funcional */
+
+  /* Scrollbar invisível para Webkit (Chrome, Edge, Safari) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.paragrafos::-webkit-scrollbar {
+  display: none; /* Chrome, Safari e Edge */
+}
+
+.extras{
+  background-image: url("/fundocarta.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carta{
+  height: auto;
+  width: 55vw;
+}
+
+.lacrecarta{
+  position: absolute;
+  top: 50vh;
 }

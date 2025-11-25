@@ -6,6 +6,7 @@ import Resumo from './Resumo.jsx';
 import Personagens from './Personagens.jsx';
 import Autor from './Autor.jsx';
 import Equipe from './Equipe.jsx';
+import Extras from './extras.jsx';
 
 const root = createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
         <Route path="/Personagens" element={<Personagens/>} />
         <Route path="/Autor" element={<Autor/>} />
         <Route path="/Equipe" element={<Equipe/>}/>
+        <Route path="/Extras" element={<Extras/>}/>
       </Routes>
     </BrowserRouter>
   </StrictMode>

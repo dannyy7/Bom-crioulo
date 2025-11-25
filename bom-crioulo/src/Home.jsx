@@ -18,7 +18,7 @@ function Home() {
         <button className='botao'  onClick={() => navigate('/Autor')}>Autor</button>
         <div className="linha-pontilhada"></div>
 
-        <button className='botao' >Extras</button>
+        <button className='botao' onClick={() => navigate('/Extras')} >Extras</button>
         <div className="linha-pontilhada"></div>
 
         <button className='botao' onClick={()=> navigate('/Equipe')}>Equipe</button>
