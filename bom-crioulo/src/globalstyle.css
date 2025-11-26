@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/breathing');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Poiret+One&display=swap');
 .titulo{
     font-family: 'Breathing', sans-serif;
     font-style: normal;
@@ -25,6 +26,11 @@
 .linha-pontilhada {
   border-top: 2px dotted rgb(255, 255, 255); 
   width: 12vw;  
+  margin: 10px 0;
+}
+.linha-pontilhada-maior {
+  border-top: 2px dotted rgb(255, 255, 255); 
+  width: 75vw;  
   margin: 10px 0;
 }
 .resumo{
@@ -310,10 +316,57 @@
   cursor: pointer;
 }
 
-.cartafundo{
+.cartafundo {
   background-image: url("/carta1.png");
-  background-size: cover;
+  background-size: cover;          /* Faz o fundo preencher toda a tela */
+  background-repeat: no-repeat;    /* Evita repetir a imagem */
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;               /* Garante 100% da altura */
   width: 100vw;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cartabox {
+  width: 90vw;
+  max-width: 800px;                /* Limite pra não ficar largo demais */
+  padding: 20px 30px;              /* Espaço para o texto não encostar nas bordas */
+  border-radius: 10px;
+  margin-top: 40px;
+
+  word-wrap: break-word;           /* Evita ultrapassar */
+  overflow-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+.cartaletra {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.4;                /* Deixa mais legível */
+  margin-top: 10px;
+  text-align: justify;             /* Opcional: deixa com cara de carta */
+}
+
+.sobre{
+  background-image: url("/carta2.png");
+  background-size: cover;          /* Faz o fundo preencher toda a tela */
+  background-repeat: no-repeat;    /* Evita repetir a imagem */
+  background-position: center;
+  min-height: 100vh;               /* Garante 100% da altura */
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.textosobre{
+  font-family: 'Breathing', sans-serif;
+  font-style: normal;
+  font-size: 30px; 
 }

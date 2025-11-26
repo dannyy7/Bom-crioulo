@@ -18,11 +18,13 @@ function Home() {
         <button className='botao'  onClick={() => navigate('/Autor')}>Autor</button>
         <div className="linha-pontilhada"></div>
 
-        <button className='botao' onClick={() => navigate('/Extras')} >Extras</button>
+        <button className='botao' onClick={() => navigate('/Extras')} >Carta</button>
         <div className="linha-pontilhada"></div>
 
-        <button className='botao' onClick={()=> navigate('/Equipe')}>Equipe</button>
+        <button className='botao' onClick={()=> navigate('/Equipe')}>Artigo e Entrevista</button>
         <div className="linha-pontilhada"></div>
+
+        <button className={styles.sobrenos} onClick={()=> navigate('/Sobre')}>Sobre nós</button>
       </div>
     </div>
   )

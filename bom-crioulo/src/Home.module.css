@@ -26,3 +26,17 @@
     border: transparent 2px solid;
     border-radius: 7px;
 }
+.sobrenos{
+    font-family: 'Maharlika', sans-serif;
+    font-family: "Abel", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.sobrenos:hover{
+  color: rgb(0, 121, 168);
+}

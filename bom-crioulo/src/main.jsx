@@ -8,6 +8,7 @@ import Autor from './Autor.jsx';
 import Equipe from './Equipe.jsx';
 import Extras from './extras.jsx';
 import Carta from './carta.jsx';
+import Sobre from './Sobre.jsx';
 
 const root = createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +22,7 @@ root.render(
         <Route path="/Equipe" element={<Equipe/>}/>
         <Route path="/Extras" element={<Extras/>}/>
         <Route path="/Carta" element={<Carta/>}/>
+        <Route path="/Sobre" element={<Sobre/>}/>
       </Routes>
     </BrowserRouter>
   </StrictMode>
